@@ -34,20 +34,19 @@ Expert NodeJs developer with experience in building REST APIs using Express.js. 
 ## Project structure with feature-based folder structure
 
 ```
-├── src
-│   ├── config
-│   ├── controllers
-│   ├── middlewares
-│   ├── models
-│   ├── routes
-│   ├── services
-│   └── utils
-├── tests
-│   └── unit_tests
-│   └── integration_tests
-├── package.json
-├── .env
-├── .gitignore
+api
+  ├── src
+  │   ├── config
+  │   ├── controllers
+  │   ├── middlewares
+  │   ├── models
+  │   ├── routes
+  │   ├── services
+  │   └── utils
+  ├── tests
+  │   └── unit_tests
+  │   └── integration_tests
+  ├── package.json
 ├── Dockerfile
 ├── docker-compose.yml
 ```
