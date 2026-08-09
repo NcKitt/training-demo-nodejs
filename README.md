@@ -42,3 +42,12 @@ $docker compose up --build
 $docker compose ps
 ```
 
+## Design and build pipeline with GitHub Actions
+1. Trigger pipeline on push to main branch
+2. Run tests with NodeJS and Jest with `npm test`
+3. Build and test the application with NodeJS
+   3.1 Build docker images  with docker compose (api and db), keep to cache
+   3.2 Push docker images to DockerHub
+4. Deploy to production server with SSH and docker compose
+
+

@@ -1,6 +1,9 @@
 services:
   api:
-    build: .
+    image: somkiat/employees-api:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/employees
       PORT: 3000
