@@ -62,4 +62,10 @@ $minikube status
 $minikube dashboard 
 ```
 
+Deploy with kubectl
+```
+$kubectl apply -f k8s
+$kubectl get pods
+$kubectl get services
+```
 
