@@ -33,7 +33,6 @@ $npm install -g newman
 $newman run nodejs-api.postman_collection.json
 ```
 
-
 ## Working with Docker and Docker Compose
 * Build and run the application with Docker Compose
 
