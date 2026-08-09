@@ -1,0 +1,79 @@
+{
+  "info": {
+    "_postman_id": "d762bde0-ae19-4681-9232-15abbe2a1d71",
+    "name": "nodejs-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1453931"
+  },
+  "item": [
+    {
+      "name": "Create-new-employee",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 201\", function () {",
+              "    pm.response.to.have.status(201);",
+              "});",
+              "",
+              "pm.test(\"Response matches JSON schema\", function () {",
+              "    const schema = {",
+              "        \"type\": \"object\",",
+              "        \"required\": [\"id\", \"name\", \"email\", \"position\"],",
+              "        \"properties\": {",
+              "            \"id\": {",
+              "                \"type\": \"number\"",
+              "            },",
+              "            \"name\": {",
+              "                \"type\": \"string\"",
+              "            },",
+              "            \"email\": {",
+              "                \"type\": \"string\",",
+              "                \"format\": \"email\"",
+              "            },",
+              "            \"position\": {",
+              "                \"type\": \"string\"",
+              "            }",
+              "        },",
+              "        \"additionalProperties\": false",
+              "    };",
+              "",
+              "    pm.response.to.have.jsonSchema(schema);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"somkiat\",\n    \"email\": \"somkiat@example.com\",\n    \"position\": \"Software Engineer\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
