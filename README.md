@@ -50,4 +50,16 @@ $docker compose ps
    3.2 Push docker images to DockerHub
 4. Deploy to production server with SSH and docker compose
 
+## Deploy with Kubernetes with [miniKube](https://minikube.sigs.k8s.io/docs/start/)
+1. Install miniKube and [kubectl](https://minikube.sigs.k8s.io/docs/handbook/kubectl/)
+2. Start miniKube with `minikube start`
+3. Check the cluster with `kubectl get nodes`
+
+Start miniKube with docker driver and 4GB memory
+```
+$minikube start --driver=docker --memory=4096
+$minikube status
+$minikube dashboard 
+```
+
 
