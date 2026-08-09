@@ -31,22 +31,30 @@ Expert NodeJs developer with experience in building REST APIs using Express.js. 
    - `db` service for the PostgreSQL database
    - `test` service for running integration tests with testcontainers
 
-## Project structure with feature-based folder structure
+## Project structure with domain-driven design
 
 ```
-api
-  ├── src
-  │   ├── config
-  │   ├── controllers
-  │   ├── middlewares
-  │   ├── models
-  │   ├── routes
-  │   ├── services
-  │   └── utils
-  ├── tests
-  │   └── unit_tests
-  │   └── integration_tests
-  ├── package.json
+api/
+├── src/
+│   ├── employees/
+│   │   ├── employees.controller.js
+│   │   ├── employees.service.js
+│   │   ├── employees.repository.js
+│   │   ├── employees.routes.js
+│   │   └── employees.model.js
+│   ├── config/
+│   │   └── db.config.js
+│   ├── middlewares/
+│   │   └── error.middleware.js
+│   ├── utils/
+│   │   └── validation.util.js
+│   └── app.js
+├── tests/
+│   ├── unit/
+│   │   └── employees.service.test.js
+│   └── integration/
+│       └── employees.integration.test.js
+├── package.json
 ├── Dockerfile
 ├── docker-compose.yml
 ```
