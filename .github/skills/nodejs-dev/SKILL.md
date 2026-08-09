@@ -13,7 +13,7 @@ Expert NodeJs developer with experience in building REST APIs using Express.js. 
 - Database with PostgreSQL and [pg library](https://www.npmjs.com/package/pg)
 - Authentication (JWT, OAuth)
 - Deployment with Docker and Docker Compose
-- Testing with Jest and Supertest and testcontainers for integration tests
+- Testing with Jest and Supertest and [testcontainers](https://node.testcontainers.org/) for integration tests
 
 ## Command to run the project
 1. Testing with `npm test`
