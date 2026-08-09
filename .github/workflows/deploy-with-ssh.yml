@@ -1,0 +1,29 @@
+name: Deploy with SSH
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Copy deployment files
+      uses: appleboy/scp-action@v1
+      with:
+        host: 159.223.46.153
+        username: root
+        password: ${{ secrets.SSH_PASSWORD }}
+        source: "api/docker-compose.yml,api/database/init.sql"
+        target: /opt/employees-api
+    - name: Deploy application
+      uses: appleboy/ssh-action@v1
+      with:
+        host: 159.223.46.153
+        username: root
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: |
+          cd /opt/employees-api/api
+          docker compose pull api
+          docker compose up -d --no-build
