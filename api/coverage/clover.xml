@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1786330766340" clover="3.2.0">
+  <project timestamp="1786330766340" name="All files">
+    <metrics statements="54" coveredstatements="53" conditionals="21" coveredconditionals="19" methods="10" coveredmethods="10" elements="85" coveredelements="82" complexity="0" loc="54" ncloc="54" packages="5" files="8" classes="8"/>
+    <package name="src">
+      <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="app.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\app.js">
+        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.config">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="db.config.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\config\db.config.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.employees">
+      <metrics statements="28" coveredstatements="28" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <file name="employees.controller.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\employees\employees.controller.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="employees.repository.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\employees\employees.repository.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="employees.routes.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\employees\employees.routes.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="employees.service.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\employees\employees.service.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="11" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.middlewares">
+      <metrics statements="7" coveredstatements="7" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+      <file name="error.middleware.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\middlewares\error.middleware.js">
+        <metrics statements="7" coveredstatements="7" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="6" type="cond" truecount="3" falsecount="0"/>
+        <line num="7" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="6" coveredstatements="5" conditionals="11" coveredconditionals="10" methods="1" coveredmethods="1"/>
+      <file name="validation.util.js" path="C:\Users\nices\OneDrive\เดสก์ท็อป\nice\IMC\training\part_d\workshop-imc-devops-nodejs\api\src\utils\validation.util.js">
+        <metrics statements="6" coveredstatements="5" conditionals="11" coveredconditionals="10" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="6" type="cond" truecount="4" falsecount="1"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
