@@ -6,6 +6,7 @@ const errorMiddleware = require('./middlewares/error.middleware');
 function createApp(databasePool = pool) {
   const app = express();
   // test2
+  // test3
   app.use(express.json());
   app.use('/api/employees', createEmployeesRouter(databasePool));
   app.use(errorMiddleware);
